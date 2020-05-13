@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Eureka-Server</module>
+        <module>Third-Party-Index-Data</module>
+        <module>Index-Gather-Store-Service</module>
     </modules>
     <packaging>pom</packaging>
 
