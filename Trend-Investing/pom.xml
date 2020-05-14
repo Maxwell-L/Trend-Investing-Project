@@ -11,6 +11,9 @@
         <module>Eureka-Server</module>
         <module>Third-Party-Index-Data</module>
         <module>Index-Gather-Store-Service</module>
+        <module>Index-Codes-Service</module>
+        <module>Index-Data-Service</module>
+        <module>Index-Zuul-Service</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -17,7 +17,7 @@ public class EurekaServerApplication {
             System.exit(1);
         }
         new SpringApplicationBuilder(EurekaServerApplication.class)
-                .properties("server.port = " + port)
+                .properties("server.port=" + port)
                 .run(args);
     }
 }

@@ -38,7 +38,7 @@ public class ThirdPartyIndexDataApplication {
         }
         // 启动
         new SpringApplicationBuilder(ThirdPartyIndexDataApplication.class)
-                .properties("server.port = " + port)
+                .properties("server.port=" + port)
                 .run(args);
     }
 }

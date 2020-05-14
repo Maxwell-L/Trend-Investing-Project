@@ -50,7 +50,7 @@ public class IndexGatherStoreServiceApplication {
         }
         // 启动
         new SpringApplicationBuilder(IndexGatherStoreServiceApplication.class)
-                .properties("server.port = " + port)
+                .properties("server.port=" + port)
                 .run(args);
     }
 
