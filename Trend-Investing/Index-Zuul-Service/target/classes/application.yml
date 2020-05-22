@@ -13,3 +13,17 @@ zuul:
     api-a:
       path: /api-codes/**
       serviceId: INDEX-CODES-SERVICE
+    api-b:
+      path: /api-backtest/**
+      serviceId: TREND-TRADING-BACKTEST-SERVICE
+    api-c:
+        path: /api-view/**
+        serviceId: TREND-TRADING-BACKTEST-VIEW
+    api-d:
+      path: /js/**
+      serviceId: TREND-TRADING-BACKTEST-VIEW
+      stripPrefix: false
+    api-e:
+      path: /css/**
+      serviceId: TREND-TRADING-BACKTEST-VIEW
+      stripPrefix: false

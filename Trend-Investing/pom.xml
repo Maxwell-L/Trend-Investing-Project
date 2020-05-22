@@ -14,6 +14,8 @@
         <module>Index-Codes-Service</module>
         <module>Index-Data-Service</module>
         <module>Index-Zuul-Service</module>
+        <module>Trend-Trading-Backtest-Service</module>
+        <module>Trend-Trading-Backtest-View</module>
     </modules>
     <packaging>pom</packaging>
 
