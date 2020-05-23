@@ -14,6 +14,7 @@
         <module name="Index-Zuul-Service" />
         <module name="Eureka-Server" />
         <module name="Index-Data-Service" />
+        <module name="Index-Config-Server" />
         <module name="Trend-Trading-Backtest-Service" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka-Server" options="-parameters" />
       <module name="Index-Codes-Service" options="-parameters" />
+      <module name="Index-Config-Server" options="-parameters" />
       <module name="Index-Data-Service" options="-parameters" />
       <module name="Index-Gather-Store-Service" options="-parameters" />
       <module name="Index-Zuul-Service" options="-parameters" />

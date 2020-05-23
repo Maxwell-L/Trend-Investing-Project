@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Eureka-Server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Index-Codes-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Index-Config-Server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Index-Data-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Index-Gather-Store-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Index-Zuul-Service/src/main/java" charset="UTF-8" />

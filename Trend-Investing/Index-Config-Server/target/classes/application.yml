@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Index-Config-Server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/Maxwell-L/Trend-Investing-Project
+          search-paths: respo
+          skip-ssl-validation: true
+          username: Maxwell-L
+          password: enjoyMi6n8g
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

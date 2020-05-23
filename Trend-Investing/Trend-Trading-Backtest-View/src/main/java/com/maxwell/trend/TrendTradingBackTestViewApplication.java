@@ -1,5 +1,6 @@
 package com.maxwell.trend;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.net.NetUtil;
 import cn.hutool.core.thread.ThreadUtil;
@@ -8,6 +9,7 @@ import cn.hutool.core.util.StrUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
@@ -22,10 +24,16 @@ public class TrendTradingBackTestViewApplication {
         int port = 0;
         int defaultPort = 8041;
         int eurekaServerPort = 8761;
+        int configServerPort = 8060;
 
         // 判断 eureka-server 是否启动
         if(NetUtil.isUsableLocalPort(eurekaServerPort)) {
             System.err.println("启动本服务前请先启动 eureka 服务器");
+            System.exit(1);
+        }
+        // 判断 config-server 是否启动
+        if(NetUtil.isUsableLocalPort(configServerPort)) {
+            System.err.println("启动本服务前请先启动 config-server 服务");
             System.exit(1);
         }
         // 若启动时带参数, 可将该服务端口改为所带参数
@@ -72,5 +80,10 @@ public class TrendTradingBackTestViewApplication {
         new SpringApplicationBuilder(TrendTradingBackTestViewApplication.class)
                 .properties("server.port=" + port)
                 .run(args);
+    }
+
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
     }
 }
