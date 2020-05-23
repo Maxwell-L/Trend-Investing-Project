@@ -7,9 +7,10 @@ spring:
       server:
         git:
           uri: https://github.com/Maxwell-L/Trend-Investing-Project
-          search-paths: respo
+          search-paths: repo
           skip-ssl-validation: true
           
+
 
 eureka:
   client:

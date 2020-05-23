@@ -12,6 +12,7 @@ spring:
           username: Maxwell-L
           password: enjoyMi6n8g
 
+
 eureka:
   client:
     service-url:
