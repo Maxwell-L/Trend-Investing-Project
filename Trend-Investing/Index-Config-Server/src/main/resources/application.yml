@@ -6,11 +6,9 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/Maxwell-L/Trend-Investing-Project
+          uri: https://gitee.com/Maxwell-L/TrendConfig
           search-paths: repo
           skip-ssl-validation: true
-          
-
 
 eureka:
   client:

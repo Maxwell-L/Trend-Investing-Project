@@ -6,8 +6,8 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/Maxwell-L/Trend-Investing-Project
-          search-paths: respo
+          uri: https://gitee.com/Maxwell-L/TrendConfig
+          search-paths: repo
           skip-ssl-validation: true
           username: Maxwell-L
           password: enjoyMi6n8g
